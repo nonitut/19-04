@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+table, form{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+tr,td,th{
+  /* border: none; */
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  text-align: left;
+  font-weight: 400;
+  padding: 8px;
+  height: 32px;
+  width: 20%;
+}
+th{
+  color: #999;
+  border-top: 1px solid #ddd;
+}
+th:hover{
+  cursor: pointer;
+  background: #eee;
+}
+
+th:last-of-type{
+  width: 28px;
+  font-size: 18px;
+  text-align: center;
+}
+th:first-letter,
+td:first-of-type,
+#new_row > input{
+  width: 20%;
+}
+
+th:last-of-type,
+td:last-of-type{
+  border-right: none;
+}
+
+/* tr:first-child,
+td:first-child,
+th:first-child,
+#new_row:first-child{
+  /* border-right: none; */
+  /* color: pink;
+} */
+
+/* tr:nth-of-type(odd){
+  background: orange;
+}
+/* Четные строки  */
+/* tr:nth-of-type(even){
+  background: pink;
+} */ /* Нечетные строки  */
+
+
+td > span {
+  display: inline-block;
+  background: #bbb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin:  0 4px  4px 0;
+}
+
+#new_row{
+  width: 100%;
+  display: flex;
+  border-collapse: collapse;
+}
+
+#new_row > *{
+  display: table-cell;
+}
+#new_row > *:focus{
+  outline: none;
+}
+
+#new_row select{
+  border-radius: 0;
+  -webkit-appearance: none;
+  width: 20%;
+  padding: 8px;
+}
+
+#new_row > button{
+  width: 20%;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  border-right: none;
+  border-top: none;
+  border-bottom:   0.5px solid #ddd;
+  border-left:   0.5px solid #ddd;
+}
+#new_row > button:hover{
+  background: #eee;
+}
+
+.sp_green{
+  background: rgba(0, 135, 107, 0.2);
+
+}
+.sp_red{
+  background: rgba(255, 0, 26, 0.2);
+}
